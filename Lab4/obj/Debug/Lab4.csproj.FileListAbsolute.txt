@@ -4,3 +4,9 @@ D:\Desktop\Навчання\1 Курс 2 семестр\ПАЛМ\Лаборат�
 D:\Desktop\Навчання\1 Курс 2 семестр\ПАЛМ\Лабораторна 4\Lab4\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
 D:\Desktop\Навчання\1 Курс 2 семестр\ПАЛМ\Лабораторна 4\Lab4\Lab4\obj\Debug\Lab4.exe
 D:\Desktop\Навчання\1 Курс 2 семестр\ПАЛМ\Лабораторна 4\Lab4\Lab4\obj\Debug\Lab4.pdb
+D:\Desktop\Навчання\1 Курс 2 семестр\ПАЛМ\Lab4\Lab4\bin\Debug\Lab4.exe
+D:\Desktop\Навчання\1 Курс 2 семестр\ПАЛМ\Lab4\Lab4\bin\Debug\Lab4.pdb
+D:\Desktop\Навчання\1 Курс 2 семестр\ПАЛМ\Lab4\Lab4\obj\Debug\Lab4.csproj.AssemblyReference.cache
+D:\Desktop\Навчання\1 Курс 2 семестр\ПАЛМ\Lab4\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
+D:\Desktop\Навчання\1 Курс 2 семестр\ПАЛМ\Lab4\Lab4\obj\Debug\Lab4.exe
+D:\Desktop\Навчання\1 Курс 2 семестр\ПАЛМ\Lab4\Lab4\obj\Debug\Lab4.pdb
