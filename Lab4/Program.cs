@@ -4,11 +4,8 @@ namespace Lab4
 {
     internal class Program
     {
-        public static int[] CreateArray_1(int countOfElements, ref int[] array)
-        {   
-            //Console.Write("Введіть к-сть елементів: ");
-            //int countOfElements = Convert.ToInt32(Console.ReadLine());
-            //int[] array = new int[countOfElements];
+        public static void CreateArray_1(int countOfElements, ref int[] array)
+        {
             Console.WriteLine("Введіть 1, щоб заповнити масив рандомно, або 2, щоб заповнити його самостійно: ");
             int choiceOfInput = Convert.ToInt32(Console.ReadLine());
             switch (choiceOfInput)
@@ -26,7 +23,6 @@ namespace Lab4
                     Input_1(countOfElements, ref array);
                     break;
             }
-            return array;
         }
         static int[] InputRandom_1(int countOfElements, ref int[] array)
         {
@@ -44,32 +40,10 @@ namespace Lab4
             {
                 array[i] = Convert.ToInt32(rowOfArray[i]);
             }
-
+            
             return array;
         }
-        static int[] Change(ref int[] array)
-        {
-            int count = 0;
-            for (int i = 0; i < array.Length; i++)
-            {
-                if (i%2==0)
-                {
-                    count++;
-                }
-            }
-            int[] newArray = new int[count];
-            int j = 0;
-            for (int i = 0; i < array.Length; i++)
-            {
-                if (i%2==0)
-                {
-                    newArray[j] = array[i];
-                    j++;
-                }
-            }
-            array = newArray;
-            return array;
-        }
+        
         static void Output(int[] array)
         {
             for (int i = 0; i < array.Length; i++)
@@ -79,18 +53,19 @@ namespace Lab4
         }
         public static void Block_1()
         {
+            Console.Write("Введіть прізвище студента, варіант якого хочете виконати. Для завершення виконання варіанту програми введіть 0. ");
+            string choiceOfStudent = Console.ReadLine().ToLower();
             Console.Write("Введіть к-сть елементів: ");
             int countOfElements = Convert.ToInt32(Console.ReadLine());
             int[] array = new int[countOfElements];
             CreateArray_1(countOfElements, ref  array);
-            Console.Write("Введіть прізвище студента, варіант якого хочете виконати. Для завершення виконання варіанту програми введіть 0. ");
-            string choiceOfStudent = Console.ReadLine().ToLower();
+            Console.WriteLine();
             do
             {
                 switch (choiceOfStudent)
                 {
                     case "дахно":
-                        Change(ref array);
+                        Dakhno.Change(ref array);
                         break;
                     case "бондарева":
                         break;
@@ -100,6 +75,7 @@ namespace Lab4
                         Console.WriteLine("Спробуйте ще раз");
                         break;
                 }
+                Console.WriteLine("Результат:");
                 Output(array);
                 Console.WriteLine();
                 Console.Write("Введіть прізвище студента, варіант якого хочете виконати. Для завершення виконання варіанту програми введіть 0. ");
