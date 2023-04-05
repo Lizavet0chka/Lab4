@@ -53,13 +53,12 @@ namespace Lab4
         }
         public static void Block_1()
         {
-            Console.Write("Введіть прізвище студента, варіант якого хочете виконати. Для завершення виконання варіанту програми введіть 0. ");
+            Console.WriteLine("Введіть прізвище студента, варіант якого хочете виконати. Для завершення виконання варіанту програми введіть 0. ");
             string choiceOfStudent = Console.ReadLine().ToLower();
             Console.Write("Введіть к-сть елементів: ");
             int countOfElements = Convert.ToInt32(Console.ReadLine());
             int[] array = new int[countOfElements];
             CreateArray_1(countOfElements, ref  array);
-            Console.WriteLine();
             do
             {
                 switch (choiceOfStudent)
@@ -78,7 +77,7 @@ namespace Lab4
                 Console.WriteLine("Результат:");
                 Output(array);
                 Console.WriteLine();
-                Console.Write("Введіть прізвище студента, варіант якого хочете виконати. Для завершення виконання варіанту програми введіть 0. ");
+                Console.WriteLine("Введіть прізвище студента, варіант якого хочете виконати. Для завершення виконання варіанту програми введіть 0. ");
                 choiceOfStudent = Console.ReadLine().ToLower();
                 Console.WriteLine("Бажаєте створити новий масив?(Так/Ні)");
                 string answer = Console.ReadLine().ToLower();
@@ -94,7 +93,7 @@ namespace Lab4
         
         public static void Block_2()
         {
-            Console.Write("Введіть прізвище студента, варіант якого хочете виконати. Для завершення виконання варіанту програми введіть 0. ");
+            Console.WriteLine("Введіть прізвище студента, варіант якого хочете виконати. Для завершення виконання варіанту програми введіть 0. ");
             string choiceOfStudent = Console.ReadLine().ToLower();
             do
             {
@@ -110,8 +109,7 @@ namespace Lab4
                         Console.WriteLine("Спробуйте ще раз");
                         break;
                 }
-                
-                Console.Write("Введіть прізвище студента, варіант якого хочете виконати. Для завершення виконання варіанту програми введіть 0. ");
+                Console.WriteLine("Введіть прізвище студента, варіант якого хочете виконати. Для завершення виконання варіанту програми введіть 0. ");
                 choiceOfStudent = Console.ReadLine().ToLower();
                 Console.WriteLine("Бажаєте створити новий масив?(Так/Ні)");
                 string answer = Console.ReadLine().ToLower();
@@ -123,7 +121,7 @@ namespace Lab4
         }
         public static void Main(string[] args)
         {
-            Console.Write("Введіть номер задачі, яку хочете виконати. Якщо бажаєте завершити виконання програми введіть 0. ");
+            Console.WriteLine("Введіть номер задачі, яку хочете виконати. Якщо бажаєте завершити виконання програми введіть 0.");
             int choiceOfTask = Convert.ToInt32(Console.ReadLine());
             do
             {
@@ -139,7 +137,7 @@ namespace Lab4
                         Console.WriteLine();
                         break;
                 }
-                Console.Write("Введіть номер задачі, яку хочете виконати. Якщо бажаєте завершити виконання програми введіть 0. ");
+                Console.WriteLine("Введіть номер задачі, яку хочете виконати. Якщо бажаєте завершити виконання програми введіть 0. ");
                 choiceOfTask = Convert.ToInt32(Console.ReadLine());
             } while (choiceOfTask!=0);
             
