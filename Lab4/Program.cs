@@ -45,6 +45,7 @@ namespace Lab4
         }
         public static void Block_1()
         {
+            int[] result = null;
             Console.Write("Введіть прізвище студента, варіант якого хочете виконати. Для завершення виконання варіанту програми введіть 0. ");
             string choiceOfStudent = Console.ReadLine().ToLower();
             do
@@ -63,11 +64,15 @@ namespace Lab4
                 }
                 Console.Write("Введіть прізвище студента, варіант якого хочете виконати. Для завершення виконання варіанту програми введіть 0. ");
                 choiceOfStudent = Console.ReadLine().ToLower();
-                Console.WriteLine("Бажаєте створити новий масив?(Так/Ні)");
+                Console.WriteLine("Бажаєте створити новий масив?(Так/Ні).\nЯкщо ні, то за вхідні дані будемо вважати результат попереднього завдання");
                 string answer = Console.ReadLine().ToLower();
                 if (answer == "так")
                 {
                     CreateArray_1();
+                }
+                else
+                {
+                    Block_1();
                 }
             } while (choiceOfStudent!="0");
         }
@@ -92,7 +97,7 @@ namespace Lab4
                 }
                 Console.Write("Введіть прізвище студента, варіант якого хочете виконати. Для завершення виконання варіанту програми введіть 0. ");
                 choiceOfStudent = Console.ReadLine().ToLower();
-                Console.WriteLine("Бажаєте створити новий масив?(Так/Ні)");
+                Console.WriteLine("Бажаєте створити новий масив?(Так/Ні).\nЯкщо ні, то за вхідні дані будемо вважати результат попереднього завдання");
                 string answer = Console.ReadLine().ToLower();
                 if (answer == "так")
                 {
@@ -103,10 +108,10 @@ namespace Lab4
         public static void Main(string[] args)
         {
             Console.Write("Введіть номер задачі, яку хочете виконати. Якщо бажаєте завершити виконання програми введіть 0. ");
-            int choiceOfAufgabe = Convert.ToInt32(Console.ReadLine());
+            int choiceOfTask = Convert.ToInt32(Console.ReadLine());
             do
             {
-                switch (choiceOfAufgabe)
+                switch (choiceOfTask)
                 {
                     case 1:
                         Block_1();
@@ -119,8 +124,8 @@ namespace Lab4
                         break;
                 }
                 Console.Write("Введіть номер задачі, яку хочете виконати. Якщо бажаєте завершити виконання програми введіть 0. ");
-                choiceOfAufgabe = Convert.ToInt32(Console.ReadLine());
-            } while (choiceOfAufgabe!=0);
+                choiceOfTask = Convert.ToInt32(Console.ReadLine());
+            } while (choiceOfTask!=0);
             
         }
     }
