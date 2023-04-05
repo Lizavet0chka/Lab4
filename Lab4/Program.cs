@@ -5,7 +5,7 @@ namespace Lab4
     internal class Program
     {
         public static void CreateArray_1()
-        {          //coment
+        {   
             Console.Write("Введіть к-сть елементів: ");
             int countOfElements = Convert.ToInt32(Console.ReadLine());
             int[] array = new int[countOfElements];
