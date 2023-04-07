@@ -26,31 +26,36 @@ namespace Lab4
                     break;
             }
         }
-        static int[] InputRandom_1(int countOfElements, ref int[] array)
+        static void InputRandom_1(int countOfElements, ref int[] array)
         {
             Random random = new Random();
             for (int i = 0; i < countOfElements; i++)
             {
                 array[i] = random.Next(-100, 100);
             }
-            return array;
         }
-        static int[] Input_1(int countOfElements, ref int[] array)
+        static void Input_1(int countOfElements, ref int[] array)
         {
             string[] rowOfArray = Console.ReadLine().Trim().Split();
             for (int i = 0; i < countOfElements; i++)
             {
                 array[i] = Convert.ToInt32(rowOfArray[i]);
             }
-            
-            return array;
         }
         
         static void Output_1(int[] array)
         {
-            for (int i = 0; i < array.Length; i++)
+            if (array.Length==0)
             {
-                Console.Write(array[i]+" ");
+                Console.WriteLine("Знищено всі елементи масиву");
+            }
+            else
+            {
+                for (int i = 0; i < array.Length; i++)
+                {
+                    Console.Write(array[i]+" ");
+                }
+                Console.WriteLine();
             }
         }
         public static void Block_1()
@@ -69,18 +74,15 @@ namespace Lab4
                         Dakhno_1.Change(ref array);
                         Console.WriteLine("Результат:");
                         Output_1(array);
-                        Console.WriteLine();
                         break;
                     case "бондарева":
                         Console.WriteLine("Результат:");
                         Output_1(array);
-                        Console.WriteLine();
                         break;
                     case "глущенко":
                         Hlushchenko_1.Change(ref array);
                         Console.WriteLine("Результат:");
                         Output_1(array);
-                        Console.WriteLine();
                         break;
                     default:
                         Console.WriteLine("Спробуйте ще раз");
@@ -152,13 +154,20 @@ namespace Lab4
         }
         static void Output_2(int rows, int col, int[][] array)
         {
-            for (int i = 0; i < rows; i++)
+            if (rows==0)
             {
-                for (int j = 0; j < col; j++)
+                Console.WriteLine("Знищено всі елементи масиву");
+            }
+            else
+            {
+                for (int i = 0; i < rows; i++)
                 {
-                    Console.Write(array[i][j]+" ");
+                    for (int j = 0; j < col; j++)
+                    {
+                        Console.Write(array[i][j]+" ");
+                    }
+                    Console.WriteLine();
                 }
-                Console.WriteLine();
             }
         }
         public static void Block_2()
