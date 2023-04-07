@@ -77,6 +77,7 @@ namespace Lab4
                         Console.WriteLine();
                         break;
                     case "глущенко":
+                        Hlushchenko_1.Change(ref array);
                         Console.WriteLine("Результат:");
                         Output_1(array);
                         Console.WriteLine();
@@ -184,6 +185,7 @@ namespace Lab4
                         Output_2(rows, col, array);
                         break;
                     case "глущенко":
+                        Hlushchenko_2.Change(ref rows, col, ref array);
                         Console.WriteLine("Результат:");
                         Output_2(rows, col, array);
                         break;

@@ -10,3 +10,10 @@ D:\Desktop\Навчання\1 Курс 2 семестр\ПАЛМ\Lab4\Lab4\obj\D
 D:\Desktop\Навчання\1 Курс 2 семестр\ПАЛМ\Lab4\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
 D:\Desktop\Навчання\1 Курс 2 семестр\ПАЛМ\Lab4\Lab4\obj\Debug\Lab4.exe
 D:\Desktop\Навчання\1 Курс 2 семестр\ПАЛМ\Lab4\Lab4\obj\Debug\Lab4.pdb
+C:\Users\Setoju\Source\Repos\Lab4\Lab4\bin\Debug\Lab4.exe
+C:\Users\Setoju\Source\Repos\Lab4\Lab4\bin\Debug\Lab4.pdb
+C:\Users\Setoju\Source\Repos\Lab4\Lab4\obj\Debug\Lab4.csproj.AssemblyReference.cache
+C:\Users\Setoju\Source\Repos\Lab4\Lab4\obj\Debug\Lab4.csproj.SuggestedBindingRedirects.cache
+C:\Users\Setoju\Source\Repos\Lab4\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
+C:\Users\Setoju\Source\Repos\Lab4\Lab4\obj\Debug\Lab4.exe
+C:\Users\Setoju\Source\Repos\Lab4\Lab4\obj\Debug\Lab4.pdb
