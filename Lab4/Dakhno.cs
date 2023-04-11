@@ -7,24 +7,21 @@ namespace Lab4
         public static void Change(ref int[] array)
         {
             int count = 0;
-            for (int i = 0; i < array.Length; i++)
+            //for (int i = 0; i < array.Length; i++)
+            //{
+            //    if (i%2==0)
+            //    {
+            //        count++;
+            //    }
+            //}
+            int temp = 0;
+            for (int i = 0; i+temp < array.Length; i++)
             {
-                if (i%2==0)
-                {
-                    count++;
-                }
+                array[i] = array[i + temp];
+                temp++;
+                count++;
             }
-            int[] newArray = new int[count];
-            int j = 0;
-            for (int i = 0; i < array.Length; i++)
-            {
-                if (i%2==0)
-                {
-                    newArray[j] = array[i];
-                    j++;
-                }
-            }
-            array = newArray;
+            Array.Resize(ref array, count);
         }
     }
     public partial class Dakhno_2

@@ -146,7 +146,7 @@ namespace Lab4
             {
                 string[] rowOfArray = Console.ReadLine().Trim().Split();
                 array[i] = new int[col];
-                for (int j = 0; i < col; i++)
+                for (int j = 0; j < col; j++)
                 {
                     array[i][j] = Convert.ToInt32(rowOfArray[j]);
                 }
