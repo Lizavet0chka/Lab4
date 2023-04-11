@@ -76,6 +76,7 @@ namespace Lab4
                         Output_1(array);
                         break;
                     case "бондарева":
+
                         Console.WriteLine("Результат:");
                         Output_1(array);
                         break;
