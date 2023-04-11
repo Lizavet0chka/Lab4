@@ -62,7 +62,7 @@ namespace Lab4
         {
             Console.WriteLine("Введіть прізвище студента, варіант якого хочете виконати. Для завершення виконання варіанту програми введіть 0. ");
             string choiceOfStudent = Console.ReadLine().ToLower();
-            Console.Write("Введіть к-сть елементів: ");
+            Console.Write("Введіть к-сть елементів масиву: ");
             int countOfElements = Convert.ToInt32(Console.ReadLine());
             int[] array = new int[countOfElements];
             CreateArray_1(countOfElements, ref  array);
@@ -76,6 +76,7 @@ namespace Lab4
                         Output_1(array);
                         break;
                     case "бондарева":
+                        Bondareva1.Task1_10(ref array);
                         Console.WriteLine("Результат:");
                         Output_1(array);
                         break;
