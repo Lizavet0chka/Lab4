@@ -25,9 +25,9 @@ namespace Lab4
                 {
                     array[i + elements.Length] = array[i];
                 }
-                for (int i = t; i < array.Length - elements.Length; i++)
+                for (int i = t; i < t+ elements.Length; i++)
                 {
-                    array[t] = int.Parse(elements[i - t]);
+                    array[i] = int.Parse(elements[i - t]);
                 }
             }
         }
