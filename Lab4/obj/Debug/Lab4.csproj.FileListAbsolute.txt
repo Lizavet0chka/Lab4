@@ -17,3 +17,10 @@ C:\Users\Setoju\Source\Repos\Lab4\Lab4\obj\Debug\Lab4.csproj.SuggestedBindingRed
 C:\Users\Setoju\Source\Repos\Lab4\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
 C:\Users\Setoju\Source\Repos\Lab4\Lab4\obj\Debug\Lab4.exe
 C:\Users\Setoju\Source\Repos\Lab4\Lab4\obj\Debug\Lab4.pdb
+D:\nvs\лабси\lab2_4\Нова папка\Lab4\bin\Debug\Lab4.exe
+D:\nvs\лабси\lab2_4\Нова папка\Lab4\bin\Debug\Lab4.pdb
+D:\nvs\лабси\lab2_4\Нова папка\Lab4\obj\Debug\Lab4.csproj.AssemblyReference.cache
+D:\nvs\лабси\lab2_4\Нова папка\Lab4\obj\Debug\Lab4.csproj.SuggestedBindingRedirects.cache
+D:\nvs\лабси\lab2_4\Нова папка\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
+D:\nvs\лабси\lab2_4\Нова папка\Lab4\obj\Debug\Lab4.exe
+D:\nvs\лабси\lab2_4\Нова папка\Lab4\obj\Debug\Lab4.pdb

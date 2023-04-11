@@ -76,7 +76,7 @@ namespace Lab4
                         Output_1(array);
                         break;
                     case "бондарева":
-
+                        Bondareva1.Task1_10(ref array);
                         Console.WriteLine("Результат:");
                         Output_1(array);
                         break;

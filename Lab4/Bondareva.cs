@@ -8,7 +8,7 @@ namespace Lab4
 {
     public partial class Bondareva1
     {
-        public void Task1_10(ref int[] array)
+        public static void Task1_10(ref int[] array)
         {
             Console.WriteLine("Введіть елементи, які хочете вставити в масив, через пробіл:");
             string[] elements = Console.ReadLine().Trim().Split();
@@ -21,7 +21,7 @@ namespace Lab4
             else
             {
                 Array.Resize(ref array, array.Length+elements.Length);
-                for (int i = t; i < array.Length; i++)
+                for (int i = t; i < array.Length - elements.Length; i++)
                 {
                     array[i + elements.Length] = array[i];
                 }
