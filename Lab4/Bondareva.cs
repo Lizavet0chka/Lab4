@@ -35,7 +35,7 @@ namespace Lab4
     }
     public partial class Bondareva2
     {
-        public static void Task2_10(ref int[][] array, int cols)
+        public static void Task2_10(ref int[][] array, int cols,ref int rows)
         {
             int[][] newArray = new int[array.GetLength(0)+ (int)(array.GetLength(0)/2)][];
             int k = 0;
@@ -43,8 +43,9 @@ namespace Lab4
             {
                 if((i+1)%3==0)
                 {
-                    Console.WriteLine($"Введіть рядок, який буде додано після парного рядка матриці ({i/3 +1}):");
+                    Console.WriteLine($"Введіть рядок, який буде додано після парного рядка матриці ({(i+1)/3 +1}):");
                     string[] line = Console.ReadLine().Trim().Split();
+                    newArray[i] = new int[cols];
                     for (int j = 0; j < cols; j++)
                     {
                         newArray[i][j]= Convert.ToInt32(line[j]);
@@ -56,6 +57,7 @@ namespace Lab4
                     k++;
                 }
             }
+            rows = newArray.GetLength(0);   
             array = newArray;
         }
     }
