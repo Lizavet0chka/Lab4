@@ -24,3 +24,10 @@ D:\nvs\лабси\lab2_4\Нова папка\Lab4\obj\Debug\Lab4.csproj.Suggeste
 D:\nvs\лабси\lab2_4\Нова папка\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
 D:\nvs\лабси\lab2_4\Нова папка\Lab4\obj\Debug\Lab4.exe
 D:\nvs\лабси\lab2_4\Нова папка\Lab4\obj\Debug\Lab4.pdb
+D:\nvs\лабси\lab2_4\к\Lab4\bin\Debug\Lab4.exe
+D:\nvs\лабси\lab2_4\к\Lab4\bin\Debug\Lab4.pdb
+D:\nvs\лабси\lab2_4\к\Lab4\obj\Debug\Lab4.csproj.AssemblyReference.cache
+D:\nvs\лабси\lab2_4\к\Lab4\obj\Debug\Lab4.csproj.SuggestedBindingRedirects.cache
+D:\nvs\лабси\lab2_4\к\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
+D:\nvs\лабси\lab2_4\к\Lab4\obj\Debug\Lab4.exe
+D:\nvs\лабси\lab2_4\к\Lab4\obj\Debug\Lab4.pdb

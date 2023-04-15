@@ -191,7 +191,7 @@ namespace Lab4
                         Output_2(rows, col, array);
                         break;
                     case "бондарева":
-                        Bondareva2.Task2_10(ref array);
+                        Bondareva2.Task2_10(ref array, col);
                         Console.WriteLine("Результат:");
                         Output_2(rows, col, array);
                         break;
