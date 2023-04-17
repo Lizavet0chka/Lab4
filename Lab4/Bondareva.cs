@@ -43,7 +43,7 @@ namespace Lab4
             {
                 if((i+1)%3==0)
                 {
-                    Console.WriteLine($"Введіть рядок, який буде додано після парного рядка матриці ({(i+1)/3 +1}):");
+                    Console.WriteLine($"Введіть рядок, який буде додано після парного рядка матриці ({(i+1)/3 *2}):");
                     string[] line = Console.ReadLine().Trim().Split();
                     newArray[i] = new int[cols];
                     for (int j = 0; j < cols; j++)
