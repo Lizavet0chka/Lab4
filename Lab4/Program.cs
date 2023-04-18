@@ -163,7 +163,7 @@ namespace Lab4
             {
                 for (int i = 0; i < rows; i++)
                 {
-                    for (int j = 0; j < col; j++)
+                    for (int j = 0; j < array[i].Length; j++)
                     {
                         Console.Write(array[i][j]+" ");
                     }

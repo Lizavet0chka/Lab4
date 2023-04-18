@@ -45,8 +45,8 @@ namespace Lab4
                 {
                     Console.WriteLine($"Введіть рядок, який буде додано після парного рядка матриці ({(i+1)/3 *2}):");
                     string[] line = Console.ReadLine().Trim().Split();
-                    newArray[i] = new int[cols];
-                    for (int j = 0; j < cols; j++)
+                    newArray[i] = new int[line.Length];
+                    for (int j = 0; j < line.Length; j++)
                     {
                         newArray[i][j]= Convert.ToInt32(line[j]);
                     }
