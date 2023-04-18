@@ -14,16 +14,16 @@ namespace Lab4
             string[] elements = Console.ReadLine().Trim().Split();
             Console.WriteLine("Введіть номер починаючи з якого ви хочете вставити елементи в масив:");
             int t = int.Parse(Console.ReadLine());
-            if(t > array.Length && t<0)
+            if(t > array.Length || t<0)
             {
                 Console.WriteLine("Помилка, ідекс номер вставки знаходиться за межами масива");
             }
             else
             {
                 Array.Resize(ref array, array.Length+elements.Length);
-                for (int i = t; i < array.Length - elements.Length; i++)
+                for (int i = array.Length - elements.Length-1; i > t-1; i--)
                 {
-                    array[i + elements.Length] = array[i];
+                    array[i+elements.Length] = array[i];
                 }
                 for (int i = t; i < t+ elements.Length; i++)
                 {
