@@ -7,13 +7,6 @@ namespace Lab4
         public static void Change(ref int[] array)
         {
             int count = 0;
-            //for (int i = 0; i < array.Length; i++)
-            //{
-            //    if (i%2==0)
-            //    {
-            //        count++;
-            //    }
-            //}
             int temp = 0;
             for (int i = 0; i+temp < array.Length; i++)
             {
@@ -32,6 +25,35 @@ namespace Lab4
             string[] range = Console.ReadLine().Trim().Split();
             int K1 = Convert.ToInt32(range[0]);
             int K2 = Convert.ToInt32(range[1]);
+            bool flag;
+            if (K1>K2 || K1+K2 <= K1)
+            {
+                flag = false;
+            }
+            else
+            {
+                flag = true;
+            }
+            while (!flag)
+            {
+                flag = true;
+                Console.WriteLine("Такий діапазон неможливий. Спробуйте ще раз.");
+                range = Console.ReadLine().Trim().Split();
+                K1 = Convert.ToInt32(range[0]);
+                K2 = Convert.ToInt32(range[1]);
+                if (K1>K2 || K1+K2 <= K1)
+                {
+                    flag = false;
+                }
+            }
+            if (K1<1)
+            {
+                K1 = 1;
+            }
+            if (K2>rows)
+            {
+                K2 = rows;
+            }
             int[][] newArray = new int[rows-Math.Abs(K1-K2)+1][];
             int count = 0;
             for (int i = 0; i < rows; i++)
